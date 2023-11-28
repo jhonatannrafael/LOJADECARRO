@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro-Jhow-shop</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="car-logo.png" class="logo" alt="">
+            <div class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Sobre</a>
+                <a href="#">Características</a>
+                <a href="#">Variações</a>
+                <a href="#">Especiais</a>
+                <a href="#">Contato</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/pedro.h.siqueira/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+
+        <div class="text">
+            <h4>Poderoso, divertido e</h4>
+            <h1>Feroz para<br> <span>Dirigir</span></h1>
+            <p>Verdadeiro equilíbrio, Real Poder, Real Perfomace.</p>
+            <a href="#" class="btn">Teste Driver</a>
+        </div>
+    </div>
+
+    <script>
+        let heroBg = document.querySelector('.hero');
+
+        setInterval(() => {
+            heroBg.style.backgroundImage = "url(bg-light.jpg)"
+            
+            setTimeout(() => {
+                heroBg.style.backgroundImage = "url(bg.jpg)"
+            }, 1000);
+        }, 2200);
+    </script>
+
+</body>
+</html>
